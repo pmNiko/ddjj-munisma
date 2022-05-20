@@ -1,5 +1,6 @@
 import LockOpenIcon from '@mui/icons-material/LockOpen'
-import { Avatar, Button, Grid, Paper, TextField } from '@mui/material'
+import { Button, TextField } from '@mui/material'
+import { CustomCard } from 'components/CustomCard'
 
 export const Login = () => {
     const paperStyle = {
@@ -13,43 +14,34 @@ export const Login = () => {
     }
 
     return (
-        <Grid display="flex" flexDirection="column">
-            <Paper elevation={10} style={paperStyle}>
-                <Grid display="flex" justifyContent="center" alignItems="center" flexDirection="column">
-                    <Avatar sx={{ backgroundColor: '#2ea3f2', boxShadow: '3px 3px 4px  rgba(60,60,60,0.5)' }}>
-                        <LockOpenIcon />
-                    </Avatar>
-                    <h3>Ingreso a declaración jurada</h3>
-                </Grid>
+        <CustomCard paperStyle={paperStyle} Icon={LockOpenIcon} title={'Ingreso a declaración jurada'}>
+            <TextField
+                sx={{
+                    marginTop: '3em',
+                    marginBottom: '3em',
+                }}
+                label="CUIT/CUIL"
+                type="number"
+                placeholder="Ingrese su cuit/cuil"
+                size="small"
+                fullWidth
+                required
+            />
+            <TextField
+                sx={{
+                    marginBottom: '6em',
+                }}
+                label="Contraseña"
+                placeholder="Ingrese su contraseña"
+                type="password"
+                size="small"
+                fullWidth
+                required
+            />
 
-                <TextField
-                    sx={{
-                        marginTop: '3em',
-                        marginBottom: '3em',
-                    }}
-                    label="CUIT/CUIL"
-                    type="number"
-                    placeholder="Ingrese su cuit/cuil"
-                    size="small"
-                    fullWidth
-                    required
-                />
-                <TextField
-                    sx={{
-                        marginBottom: '6em',
-                    }}
-                    label="Contraseña"
-                    placeholder="Ingrese su contraseña"
-                    type="password"
-                    size="small"
-                    fullWidth
-                    required
-                />
-
-                <Button variant="contained" type="submit" color="primary" fullWidth>
-                    Buscar
-                </Button>
-            </Paper>
-        </Grid>
+            <Button variant="contained" type="submit" color="primary" fullWidth>
+                Buscar
+            </Button>
+        </CustomCard>
     )
 }
