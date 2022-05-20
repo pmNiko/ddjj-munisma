@@ -19,10 +19,10 @@ export const BasicLayout = ({ children }: Props) => {
             <NavBar />
             <NotifyToast />
 
-            <Grid container display="flex" justifyContent="center">
+            <Grid container display="flex" justifyContent="center" sx={{ backgroundColor: '#ffffff' }}>
                 {children}
             </Grid>
-            
+
             <CustomFooter />
         </>
     )

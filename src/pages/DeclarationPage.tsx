@@ -9,7 +9,7 @@ export const DeclarationPage = () => {
                 <Box
                     sx={{
                         backgroundColor: '#ffffff',
-                        minHeight: '70vh',
+                        height: 'auto',
                     }}
                     display="flex"
                     justifyContent="center"
