@@ -3,7 +3,7 @@ import { Grid, Typography } from '@mui/material'
 /** Component Footer Page */
 export const CustomFooter = () => {
     return (
-        <Grid container sx={{ background: '#1f1f1f', marginTop: '2rem', height: '25vh' }}>
+        <Grid container sx={{ background: '#1f1f1f', position: 'absolute', marginTop: '20px', height: '27%' }}>
             <Grid item xs={12} textAlign="center" fontSize={15} color="white" pt={5} mb={4}>
                 <Typography>Municipalidad de San Martín de los Andes</Typography>
             </Grid>

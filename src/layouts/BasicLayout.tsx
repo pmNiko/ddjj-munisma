@@ -1,4 +1,4 @@
-import { Grid } from '@mui/material'
+import { Box, Grid } from '@mui/material'
 import { CustomFooter } from 'components/Footer'
 import { NavBar } from 'components/Nav'
 import { NotifyToast } from 'components/NotifyToast'

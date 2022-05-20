@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material'
+import { Divider, Typography } from '@mui/material'
 import { useEffect, useState } from 'react'
 import { ItemContent, ItemHeader } from './customComponentStyle'
 
@@ -31,7 +31,7 @@ export const ItemList = ({ titles, contents }: Props) => {
         <>
             {true ? (
                 dataLoad.map(({ title, content }: Item) => (
-                    <div key={title + content} style={{ marginTop: '2em' }}>
+                    <div key={title + content} style={{ marginTop: '1em' }}>
                         <ItemHeader>
                             <Typography variant="subtitle2"> {title} </Typography>
                         </ItemHeader>

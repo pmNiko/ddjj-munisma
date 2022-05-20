@@ -8,8 +8,10 @@ export const DeclarationPage = () => {
             <Grid item xs={12} sm={12} md={12} lg={12}>
                 <Box
                     sx={{
+                        paddingTop: '1rem',
                         backgroundColor: '#ffffff',
-                        height: 'auto',
+                        height: '70%',
+                        marginBottom: '1rem',
                     }}
                     display="flex"
                     justifyContent="center"

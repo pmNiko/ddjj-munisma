@@ -19,6 +19,7 @@ export const CustomCard = ({ children, paperStyle, Icon, title }: Props) => {
                     <Typography gutterBottom variant="body1" component="div" textAlign="center">
                         <Box fontWeight="fontWeightBold">{title}</Box>
                     </Typography>
+                    <Divider sx={{ width: '100%' }} />
                 </Grid>
 
                 {children}
