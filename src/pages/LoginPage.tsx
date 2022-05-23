@@ -9,7 +9,7 @@ export const LoginPage = () => {
                 <Box
                     sx={{
                         backgroundColor: '#ffffff',
-                        minHeight: '70vh',
+                        minHeight: '77vh',
                     }}
                     display="flex"
                     justifyContent="center"
