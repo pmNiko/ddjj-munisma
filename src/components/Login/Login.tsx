@@ -1,8 +1,19 @@
 import LockOpenIcon from '@mui/icons-material/LockOpen'
 import { Button, TextField } from '@mui/material'
 import { CustomCard } from 'components/CustomCard'
+import { useEffect, useState } from 'react'
+import { useAuth } from 'services/useHttp'
+
+const initialState = {
+    cuit: '',
+    password: '',
+}
 
 export const Login = () => {
+    const [params, setParams] = useState(initialState)
+
+    const { error, isLoading, response } = useAuth({ endpoint: '/signIn', params })
+
     const paperStyle = {
         marginTop: '3em',
         padding: 20,
@@ -12,6 +23,17 @@ export const Login = () => {
         borderRadius: '15px 15px 15px 15px',
         boxShadow: '5px 10px 20px rgba(0, 0, 0, 0.4)',
     }
+
+    const handleSubmit = (e: any) => {
+        e.preventDefault()
+        setParams({ cuit: '20126445807', password: '8befffdf' })
+    }
+
+    useEffect(() => {
+        if (!isLoading && response.length > 0) {
+            console.log(response)
+        }
+    }, [response])
 
     return (
         <CustomCard paperStyle={paperStyle} Icon={LockOpenIcon} title={'Ingreso a declaración jurada'}>
@@ -39,8 +61,8 @@ export const Login = () => {
                 required
             />
 
-            <Button variant="contained" type="submit" color="primary" fullWidth>
-                Buscar
+            <Button variant="contained" type="submit" color="primary" fullWidth onClick={handleSubmit}>
+                Ingresar
             </Button>
         </CustomCard>
     )

@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+# Declaración Jurada
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Municipalidad de San Martin de los Andes
 
-## Available Scripts
+<p align="center" width="300">
+   <img align="center" width="200" src="https://i.ibb.co/V3tMCZn/municipio.png" />
+</p>
 
-In the project directory, you can run:
+<h5>_____Instalación y decarga_____</h5>
 
-### `npm start`
+    .......
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> ---
+>
+> _Variables de entorno:_
+>
+> > <ul>
+> >     <li>PUBLIC_URL</li>
+> >     <li>REACT_APP_BASENAME</li>
+> >     <li>REACT_APP_API_WEBSERVICE</li>
+> >     <li>REACT_APP_RECAPTCHA_API_KEY</li>
+> > </ul>
+>
+> ---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+> ---
+>
+> ##### NPM Modules
+>
+> instalación de las dependencias a través de:
+>
+> -   npm install
+> -   yarn
+>
+> ---
 
-### `npm test`
+> ---
+>
+> #### Ejecución del sistema
+>
+> -   npm start &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -------> Modo development
+> -   npm run build -------> Código distribuible
+>
+> ---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Imagenes de referencia
 
-### `npm run build`
+> ---
+>
+> > ##### Página de Login
+>
+> <p align="center" width="300">
+>   <img align="center" width="650" src="https://i.ibb.co/YcK0svP/macroclick.png" />
+> </p>
+> _______________________________________________________________________________
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📝 App [ddjj](https://app.sma.gob.ar/ddjj/ingresar)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Sitios relacionados
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-   [municipalidad.sma.gob.ar](https://municipalidad.sma.gob.ar/)
+-   [sanmartindelosandes.gov.ar](http://www.sanmartindelosandes.gov.ar/municipio)
 
-### `npm run eject`
+#### Desarroladores
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+-   [Esteban Menendez](https://github.com/ejmenendez)
+-   [Martín Nicolás Paneblanco](https://github.com/pmNiko)
